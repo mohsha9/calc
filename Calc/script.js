@@ -1,12 +1,16 @@
 // let digit = localStorage.getItem('digit');
 let digit = '';
 
+// Create a variable of all buttons using querySelcetorAll than iterate each button using forEach
+
 const calcButtons = document.querySelectorAll('.js-cal-button');
 calcButtons.forEach((button) => {
   button.addEventListener('click', () => {
     calculator(button.innerHTML);
   });
 });
+
+// Create function with a parameter that take a value as a click Event from button innerHTML.
 
 function calculator(number) {
   if (number === 'AC') {
